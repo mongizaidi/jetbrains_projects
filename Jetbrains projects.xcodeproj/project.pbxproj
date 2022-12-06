@@ -14,6 +14,12 @@
 		CE5DD406293F71B400CEC42D /* Jetbrains_projectsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE5DD405293F71B400CEC42D /* Jetbrains_projectsTests.swift */; };
 		CE5DD410293F71B400CEC42D /* Jetbrains_projectsUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE5DD40F293F71B400CEC42D /* Jetbrains_projectsUITests.swift */; };
 		CE5DD412293F71B400CEC42D /* Jetbrains_projectsUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE5DD411293F71B400CEC42D /* Jetbrains_projectsUITestsLaunchTests.swift */; };
+		CE5DD420293F71FC00CEC42D /* Project.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE5DD41F293F71FC00CEC42D /* Project.swift */; };
+		CE5DD422293F72CE00CEC42D /* ProjectsDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE5DD421293F72CE00CEC42D /* ProjectsDataSource.swift */; };
+		CE5DD425293F736300CEC42D /* ProjectRowView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE5DD424293F736300CEC42D /* ProjectRowView.swift */; };
+		CE5DD427293F74D400CEC42D /* ProjectsData.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE5DD426293F74D400CEC42D /* ProjectsData.swift */; };
+		CE5DD429293F777D00CEC42D /* ProjectsListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE5DD428293F777D00CEC42D /* ProjectsListView.swift */; };
+		CE5DD42B293F780500CEC42D /* ProjectDetailsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE5DD42A293F780500CEC42D /* ProjectDetailsView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -44,6 +50,12 @@
 		CE5DD40B293F71B400CEC42D /* Jetbrains projectsUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Jetbrains projectsUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		CE5DD40F293F71B400CEC42D /* Jetbrains_projectsUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Jetbrains_projectsUITests.swift; sourceTree = "<group>"; };
 		CE5DD411293F71B400CEC42D /* Jetbrains_projectsUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Jetbrains_projectsUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		CE5DD41F293F71FC00CEC42D /* Project.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Project.swift; sourceTree = "<group>"; };
+		CE5DD421293F72CE00CEC42D /* ProjectsDataSource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProjectsDataSource.swift; sourceTree = "<group>"; };
+		CE5DD424293F736300CEC42D /* ProjectRowView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProjectRowView.swift; sourceTree = "<group>"; };
+		CE5DD426293F74D400CEC42D /* ProjectsData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProjectsData.swift; sourceTree = "<group>"; };
+		CE5DD428293F777D00CEC42D /* ProjectsListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProjectsListView.swift; sourceTree = "<group>"; };
+		CE5DD42A293F780500CEC42D /* ProjectDetailsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProjectDetailsView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -94,6 +106,8 @@
 		CE5DD3F3293F71B300CEC42D /* Jetbrains projects */ = {
 			isa = PBXGroup;
 			children = (
+				CE5DD41E293F71EE00CEC42D /* Model */,
+				CE5DD423293F734700CEC42D /* View */,
 				CE5DD3F4293F71B300CEC42D /* Jetbrains_projectsApp.swift */,
 				CE5DD3F6293F71B300CEC42D /* ContentView.swift */,
 				CE5DD3F8293F71B400CEC42D /* Assets.xcassets */,
@@ -106,6 +120,7 @@
 			isa = PBXGroup;
 			children = (
 				CE5DD3FB293F71B400CEC42D /* Preview Assets.xcassets */,
+				CE5DD426293F74D400CEC42D /* ProjectsData.swift */,
 			);
 			path = "Preview Content";
 			sourceTree = "<group>";
@@ -125,6 +140,25 @@
 				CE5DD411293F71B400CEC42D /* Jetbrains_projectsUITestsLaunchTests.swift */,
 			);
 			path = "Jetbrains projectsUITests";
+			sourceTree = "<group>";
+		};
+		CE5DD41E293F71EE00CEC42D /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				CE5DD41F293F71FC00CEC42D /* Project.swift */,
+				CE5DD421293F72CE00CEC42D /* ProjectsDataSource.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		CE5DD423293F734700CEC42D /* View */ = {
+			isa = PBXGroup;
+			children = (
+				CE5DD424293F736300CEC42D /* ProjectRowView.swift */,
+				CE5DD428293F777D00CEC42D /* ProjectsListView.swift */,
+				CE5DD42A293F780500CEC42D /* ProjectDetailsView.swift */,
+			);
+			path = View;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -257,8 +291,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CE5DD422293F72CE00CEC42D /* ProjectsDataSource.swift in Sources */,
 				CE5DD3F7293F71B300CEC42D /* ContentView.swift in Sources */,
 				CE5DD3F5293F71B300CEC42D /* Jetbrains_projectsApp.swift in Sources */,
+				CE5DD42B293F780500CEC42D /* ProjectDetailsView.swift in Sources */,
+				CE5DD425293F736300CEC42D /* ProjectRowView.swift in Sources */,
+				CE5DD420293F71FC00CEC42D /* Project.swift in Sources */,
+				CE5DD429293F777D00CEC42D /* ProjectsListView.swift in Sources */,
+				CE5DD427293F74D400CEC42D /* ProjectsData.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
